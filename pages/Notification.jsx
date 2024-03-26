@@ -72,8 +72,8 @@ const Notification = () => {
   }, []);
 
   return (
-      <div className="font-sans bg-white h-screen">
-        <div className="mt-10 mx-4" id="timeContainer">
+      <div className="font-sans bg-white h-screen mt-16 p-2">
+        <div className="mx-4" id="timeContainer">
           <div
             id="notification1"
             className="bg-white border mb-4 p-4 flex flex-col cursor-pointer transition transform hover:bg-blue-100"

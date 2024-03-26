@@ -65,9 +65,9 @@ const ProgramDetails = () => {
 
 
     return (
-        <div className="flex flex-col min-h-screen bg-gray-100 mt-12 text-black">
+        <div className="flex flex-col h-full bg-gray-100 mt-16 text-black p-2">
 
-            <div className="bg-blue-500 p-4 rounded-lg mb-4">
+            <div className="bg-cyan-700 p-4 rounded-lg mb-4">
                 <h1 className="text-2xl text-white">Applications &gt; College Profile &gt; Programs</h1>
             </div>
 
@@ -79,7 +79,7 @@ const ProgramDetails = () => {
                 <h2 className="text-xl font-semibold mb-2 text-black mt-2">Banner Image</h2>
                 <div className="bg-gray-100 p-4 rounded-lg">
                     <img
-                        src="/image4.png" alt="Banner" className="mx-auto w-4/5 rounded-lg max-h-96"/>
+                        src="/image4.png" alt="Banner" className="mx-auto w-4/5 rounded-lg max-h-96" />
                 </div>
 
 
@@ -235,7 +235,7 @@ const ProgramDetails = () => {
                         <textarea value={practicalSkill} className="w-full p-2 border rounded-lg resize-y text-gray-600" rows="4" readOnly />
                     </div>
                     <img
-                        src="/image1.png"
+                        src="/image1.jpg"
                         alt="Image"
                         className="w-1/4 max-h-52 object-cover rounded-lg ml-2"
                     />
@@ -277,6 +277,16 @@ const ProgramDetails = () => {
                         alt="Image"
                         className="w-1/4 max-h-52 object-cover rounded-lg ml-2"
                     />
+                </div>
+
+                <div className="flex mt-16 mb-1">
+                    <button onClick={() => { window.location.href = "./Programs"; }} className="bg-white text-orange-600 px-2 py-2 border border-orange-600 hover:bg-green-600  hover:border-green-600 hover:text-white rounded-md ml-auto mr-2">
+                        Previous
+                    </button>
+
+                    <button onClick={() => { window.location.href = "./Decision"; }} className="bg-orange-600 text-white px-2 py-2 border border-orange-700  hover:bg-orange-400 hover:border-orange-400 rounded-md mr-2">
+                        Proceed to decision
+                    </button>
                 </div>
 
             </div>

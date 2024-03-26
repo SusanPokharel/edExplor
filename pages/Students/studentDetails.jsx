@@ -38,9 +38,8 @@ const StudentDetails = () => {
 
 
     return (
-        <div className="flex flex-col min-h-screen bg-gray-100 mt-12 mb-10 text-black">
-
-            <div className="bg-blue-500 p-4 rounded-lg mb-4">
+        <div className="flex flex-col h-full bg-gray-100 mt-16 text-black p-2">
+            <div className="bg-cyan-700 p-4 rounded-lg mb-4">
                 <h1 className="text-2xl text-white">Student Details</h1>
             </div>
 
@@ -50,7 +49,9 @@ const StudentDetails = () => {
                         {/* Left side -- logo portion*/}
                         <div className='w-1/3'>
                             <h2 className="text-xl font-semibold mb-2 text-black ml-8">Student Profile</h2>
-                            <img src="/image1.png" alt="Banner" className="ml-10 min-h-40 min-w-40 rounded-full" />
+                            <div className='w-1/3'>
+                            <img src="/Susan.jpg" alt="Banner" className="ml-10 min-h-40 min-w-40 rounded-full" />
+                            </div>
                         </div>
 
                         {/* Right side -- text portion */}
@@ -60,7 +61,7 @@ const StudentDetails = () => {
                                     <div>
                                         <h2 className="text-xl font-semibold text-black mt-2 text-left mb-12">Joined on: 1st January, 2024</h2>
                                         <h2 className="text-xl font-semibold mb-12 text-black mt-2 text-left">Pending: 1 application</h2>
-                                        <button className="bg-white text-orange-600 px-6 lg:px-20 py-2 mr-2 border border-orange-600 rounded-md font-bold overflow-hidden whitespace-nowrap">
+                                        <button onClick={() => { window.location.href = "./studentActivity"; }} className="bg-white text-orange-600 px-6 lg:px-20 py-2 mr-2 border border-orange-600 rounded-md font-bold  hover:bg-green-600  hover:border-green-600 hover:text-white overflow-hidden whitespace-nowrap">
                                             View activities
                                         </button>
                                     </div>
@@ -249,10 +250,10 @@ const StudentDetails = () => {
                         ))}
                     </div>
                 </div>
-                
+
 
                 <div className='flex justify-end mb-10 mt-10'>
-                    <button className="bg-white text-orange-600 px-2 lg:px-16 py-2 mr-2 border border-orange-600 rounded-md font-bold overflow-hidden whitespace-nowrap">
+                    <button onClick={() => { window.location.href = "./studentDashboard"; }} className="bg-white text-orange-600 px-2 lg:px-16 py-2 mr-2 border border-orange-600 rounded-md font-bold  hover:bg-blue-400  hover:border-blue-400 hover:text-white overflow-hidden whitespace-nowrap">
                         Return to Dashboard
                     </button>
 

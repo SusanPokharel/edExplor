@@ -8,14 +8,14 @@ const Decision = () => {
     };
 
     return (
-        <div className=" flex flex-col min-h-screen bg-gray-100 mt-12 text-black">
+        <div className=" flex flex-col min-h-screen bg-gray-100 mt-16 text-black p-2">
 
-            <div className="bg-blue-500 p-4 rounded-lg mb-4 mr-2">
+            <div className="bg-cyan-700 p-4 rounded-lg mb-4 mr-2">
                 <h1 className="text-2xl text-white">Applications &gt; College Profile &gt; Programs &gt; Decision</h1>
             </div>
 
             <div className="flex relative p-4 rounded-lg z-10">
-                <img src="/image1.png" alt="Banner" className="w-full rounded-lg max-h-64 object-cover" />
+                <img src="/building.png" alt="Banner" className="w-full rounded-lg max-h-64 object-cover" />
 
                 <img src="/isling.png" alt="collegeLogo" className="absolute inset-y-48 left-20 w-36 h-36 object-cover z-1 rounded-lg" />
             </div>
@@ -113,16 +113,14 @@ const Decision = () => {
             </div>
 
             <div className="flex mt-16 mb-10">
-                <button className="bg-white text-orange-600 px-4 py-2 border border-orange-600 rounded-md ml-auto mr-2">
+                <button onClick={() => { window.location.href = "./programDetails"; }} className="bg-white text-orange-600 px-4 py-2 border border-orange-600 hover:bg-green-600  hover:border-green-600 hover:text-white rounded-md ml-auto mr-2">
                     Previous
                 </button>
 
-                <button className="bg-orange-500 text-white px-4 py-2 border border-orange-600 rounded-md mr-2">
-                    Take decision
+                <button onClick={() => { window.location.href = "./applications"; }} className="bg-orange-600 text-white px-4 py-2 border border-orange-700  hover:bg-orange-400 hover:border-orange-400 rounded-md mr-2">
+                   Take decision
                 </button>
             </div>
-
-
         </div>
     );
 };
