@@ -7,7 +7,7 @@ import applicationData from './data.json';
 import { TiTick } from "react-icons/ti";
 import { RxCross2 } from "react-icons/rx";
 import { MdOutlineTurnLeft } from "react-icons/md";
-import { sortByDate } from './sortDate';
+import { sortByDate } from './sortDate.js';
 import { RiArrowDropDownLine } from "react-icons/ri";
 
 
