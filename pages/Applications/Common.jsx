@@ -3,7 +3,7 @@ import { MdOutlineRemoveRedEye } from 'react-icons/md';
 import { SlPencil } from 'react-icons/sl';
 import { VscFilePdf } from 'react-icons/vsc';
 import { RiDeleteBin6Line } from 'react-icons/ri';
-import applicationData from './data';
+import applicationData from './data.json';
 import { TiTick } from "react-icons/ti";
 import { RxCross2 } from "react-icons/rx";
 import { MdOutlineTurnLeft } from "react-icons/md";
