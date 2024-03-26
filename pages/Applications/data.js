@@ -1,5 +1,6 @@
-export const applicationData = [
-    {
+
+const applicationData = 
+    [{
         id: "#3036",
         collegeName: "Islington College",
         email: "islington@example.com",
@@ -280,8 +281,7 @@ export const applicationData = [
         date: "2024-02-24",
         ownership: "Private",
         status: "Pending"
-    }
-];
+    }];
 
 export default applicationData;
 
