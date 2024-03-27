@@ -83,23 +83,23 @@ function Sidebar() {
             </button>
           </li>
           <li>
-  <button onClick={() => { setShowMasterdata(!showMasterdata); handleSectionClick('masterdata'); }} className={`mb-4 rounded-full p-2 ${showMasterdata ? 'bg-gray-300' : ''}`}>
-    <PiGitBranch />
-  </button>
-  {showMasterdata && (
-    <ul className="pl-4">
-      {dropdownItems.map((item, index) => (
-        <li key={index} className="py-4 flex items-center">
-          <a href={item.link} onClick={() => { handleSectionClick(item.label); setShowMasterdata(false); }} className={`flex items-center ${activeSection === 'masterdata' ? '' : ''}`}>
-            <span className="text-lg">{item.icon}</span>
-            {/* Conditionally render label based on screen size */}
-            <span className="hidden md:inline">{item.label}</span> {/* Hide label on small screens */}
-          </a>
-        </li>
-      ))}
-    </ul>
-  )}
-</li>
+            <button onClick={() => { setShowMasterdata(!showMasterdata); handleSectionClick('masterdata'); }} className={`mb-4 rounded-full p-2 ${showMasterdata ? 'bg-gray-300' : ''}`}>
+              <PiGitBranch />
+            </button>
+            {showMasterdata && (
+              <ul className="pl-4">
+                {dropdownItems.map((item, index) => (
+                  <li key={index} className="py-4 flex items-center">
+                    <a href={item.link} onClick={() => { handleSectionClick(item.label); setShowMasterdata(false); }} className={`flex items-center ${activeSection === 'masterdata' ? '' : ''}`}>
+                      <span className="text-lg">{item.icon}</span>
+                      {/* Conditionally render label based on screen size */}
+                      <span className="hidden md:inline">{item.label}</span> {/* Hide label on small screens */}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </li>
           <li>
             <button onClick={() => { handleSectionClick('roleManagement'); window.location.href = "../roleManagement/roleManagement"; }} className={`mb-4 rounded-full p-2 ${activeSection === 'roleManagement' ? 'bg-gray-300' : ''}`}>
               <BsPersonExclamation />
@@ -165,9 +165,9 @@ function Sidebar() {
               ))}
             </ul>
           )}
-          <button onClick={() => { handleSectionClick('roleManagement'); window.location.href = "../roleManagement/roleManagement"; }} className={`py-4 flex items-center hover:bg-gray-100 rounded-full${activeSection === 'roleManagement' ? 'bg-gray-200 rounded-full px-4 text-black' : ''}`}>
+          <button onClick={() => { handleSectionClick('roleManagement'); window.location.href = "../roleManagement/roleManagement"; }} className={`py-4 flex items-center hover:bg-gray-100 rounded-full overflow-hidden whitespace-nowrap inline-block${activeSection === 'roleManagement' ? ' bg-gray-200 rounded-full px-4 text-black' : ''}`} style={{ maxWidth: "200px" }}>
             <BsPersonExclamation className="mr-2 text-xl" />
-            <span className="overflow-hidden whitespace-nowrap">Role Management</span>
+            <span className="overflow-hidden whitespace-nowrap inline-block">Role Management</span>
           </button>
           <button onClick={() => { handleSectionClick('notificationManagement'); window.location.href = "../notDone/notificationManagement"; }} className={`py-4 flex items-center hover:bg-gray-100 rounded-full${activeSection === 'notificationManagement' ? 'bg-gray-200 rounded-full px-4 text-black' : ''}`}>
             <MdOutlineNotificationsActive className="mr-2 text-xl" />

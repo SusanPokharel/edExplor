@@ -172,7 +172,7 @@ export const ApplicationPage = () => {
                                 <a href="../collegeProfile/Profile" title="View">
                                     <MdOutlineRemoveRedEye className=" ml-2 mr-4" />
                                 </a>
-                                <a href="../collegeProfile/editProfileDetails" title="Edit">
+                                <a href="../collegeProfile/editProgramDetails" title="Edit">
                                     <SlPencil className="mr-4" />
                                 </a>
                                 <a href="your_link_here" title="Download" >
